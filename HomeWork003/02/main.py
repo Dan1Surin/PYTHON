@@ -34,3 +34,21 @@ for item in dictionary:
                     sum=item+sum
 
 print(f'Ваше слово - {word}. вы заработали {sum} баллов')
+
+### Решение с семинара
+
+# dictionary = {'AEIOULNSTRАВЕИНОРСТ':1,
+#               'ДКЛМПУDG':2,
+#               'BCMPБГЁЬЯ':3,
+#               'FHVWYЙЫ':4,
+#               'KЖЗХЦЧ':5,
+#               'JXШЭЮ':8,
+#               'ФЩЪQZ':10}
+#
+# word=input('Введите слово')
+# total=0
+# for letter in word.upper():
+#     for letters in dictionary.keys():
+#         if letter in letters:
+#             total += dictionary.get(letters)
+#             break
