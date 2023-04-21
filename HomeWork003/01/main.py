@@ -30,7 +30,7 @@ a=1 ##переменная для поиска ближайшего числа
 num_1=0 ##переменная для вывода ближайшего числа
 
 x = int(input('Введите искомое число X - '))
-for i in num:
+for i in num:# count = num.count(x)
     if i==x:
         count+=1
 if count>0:
@@ -42,6 +42,8 @@ else:
         else:
             a+=1
     print(f'ближайшее число - {num_1}')
+
+
 
 
 
