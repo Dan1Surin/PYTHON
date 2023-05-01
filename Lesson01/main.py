@@ -1,5 +1,5 @@
 # print(5)
-import random
+# import random
 
 # # ctrl + f5 / p пуск ; ctrl + / -коммент выделенного участка - #
 # # python3 -m venv .folder - создать виртуальное окружение, для выбора версий библиотек
