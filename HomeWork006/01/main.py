@@ -4,11 +4,15 @@
 # Каждое число вводится с новой строки.
 
 
-n=int(input('Write n'))
-d=int(input('Write d'))
+a1=int(input('Write a1 '))
+d=int(input('Write d '))
+lenght=int(input('Write lenght '))
 
-list_progress=[n]
+list_progress=[a1]
 
 print(list_progress)
 
-print()
+for i in range(lenght-1):
+    list_progress.append(a1+(i-1)*d)
+
+print(list_progress)
