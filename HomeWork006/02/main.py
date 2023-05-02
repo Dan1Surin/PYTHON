@@ -15,9 +15,9 @@ max=message('max')
 list_1=random_list(1,100,10)
 list_index=[]
 
-for i in list_1:
-    if min<list_1[i]>max:
-        list_index.append(list_1[i])
-    else:print('нет в списке')
+for i in range(len(list_1)):
+    if list_1[i]>=min and list_1[i]<=max:
+        list_index.append(i)
 
+print(list_1)
 print(list_index)
