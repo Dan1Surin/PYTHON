@@ -7,20 +7,11 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-n = int(input('Write n - '))
-m = int(input('Write m - '))
+widht = int(input('Write widht - '))
+height = int(input('Write height - '))
 k = int(input('Write k - '))
 
-if(n>m):
-    if(round(n / 2)*m >= k):
-        print('yes')
-    else:
-        print('no')
+if (k % widht == 0 or k % height == 0) and k < widht * height:
+    print('yes')
 else:
-    if((round(m / 2)*n) >= k):
-        print('yes')
-    else:
-        print('no')
-
-
-
+    print('no')

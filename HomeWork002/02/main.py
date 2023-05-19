@@ -17,8 +17,13 @@ a=x+y
 b=x*y
 
 for i in range(1,1000):
-    for z in range(1, 1000):
+    for z in range(i, 1000):
         if i+z == a and i*z == b:
             print(f"загаданные числа {i} и {z}")
 
+# Через уравнения
 
+# b=x*y
+# x=a-y
+# b=(a-y)*y
+# -y**2+a*y-b=0
