@@ -73,28 +73,31 @@ print(res1)
 
 # zip склеивает элементы на одной позиции из заданных списков выводя кортеж
 
-users=['us1','us2','us3']
-ids=[4,3,4,6,7]
-data11=list(zip(users,ids))
+users = ['us1', 'us2', 'us3']
+ids = [4, 3, 4, 6, 7]
+data11 = list(zip(users, ids))
 print(data11)
 
 # enumerate выводит порядковый номер
 
-users=['us1','us2','us3']
-data11=list(enumerate(users))
+users = ['us1', 'us2', 'us3']
+data11 = list(enumerate(users))
 print(data11)
 
+###isdigit если число
+list_111 = ['2', 'wee', '2', 'qe', '22', '1', '23']
 
-# файлы
+list_111 = list(filter(lambda x: x.isdigit(), list_111))
+print(list_111)
 
-# append - a
-# read - r
-# write - w
-# w+
-# r+
 
-colors=['red','green','blue']
-data22=open('file.txt','a')
-data22.write(colors)
-data22.close()
+## кусок практики
 
+def same_by(characteristic, objects):
+    my_set = set(map(characteristic, objects))
+    print(my_set)
+    return len(my_set) < 2
+
+
+my_list = [2, 3, 5, 6, 4]
+print(same_by(lambda x: x % 2, my_list))
