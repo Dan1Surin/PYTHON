@@ -11,8 +11,19 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да
 #     **Вывод:** Парам пам-пам
 
-lirics=input('Винни твой стих - ')
+lyrics = input('Винни твой стих - ').split()
 
-print(type(lirics))
-print(lirics)
+#count_list = list()
+# for phrase in lyrics:
+#     count = 0
+#     phrase = list(phrase)
+#     for letter in phrase:
+#         if letter == 'а': count += 1
+#     count_list.append(count)
+
+count_list=set(sum(map(lambda x:x=='а',i))for i in lyrics)
+print(count_list)
+
+print('Парам пам-пам' if len(count_list)<2 else 'Пам парам')
+
 

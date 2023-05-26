@@ -101,3 +101,9 @@ def same_by(characteristic, objects):
 
 my_list = [2, 3, 5, 6, 4]
 print(same_by(lambda x: x % 2, my_list))
+
+
+def find_orbit(list_of_orbits: list) -> tuple:
+    dict_={orbit:round() for orbit in filter(lambda orbit: orbit[0] != orbit[1],list_of_orbits)}
+    return dict_
+
