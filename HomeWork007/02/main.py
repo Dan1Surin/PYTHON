@@ -21,13 +21,13 @@
 
 
 def print_operation_table(operation, num_rows=6,num_columns=6):
-    matrix_ = list(list(operation for x in range(num_rows)) for y in range(num_columns))
+    a = operation
+    matrix_ = list(list(a(x,y) for x in range(1,num_rows+1)) for y in range(1,num_columns+1))
     for i in matrix_:
-        print()
+        print(i)
 
 
-
-
+print_operation_table(lambda x,y:x*y)
 
 
 
